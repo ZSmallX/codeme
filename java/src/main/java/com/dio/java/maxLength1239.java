@@ -3,14 +3,14 @@ package com.dio.java;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 // start at 2020/3/8 16:55
 public class maxLength1239 {
+    int maxLength = 0;
+    int visited = 0;
+
     @Test
     public void test() {
         Assert.assertEquals(4, maxLength(Arrays.asList(new String[]{"un", "iq", "ue"})));
@@ -25,9 +25,6 @@ public class maxLength1239 {
     public void test3() {
         Assert.assertEquals(26, maxLength(Arrays.asList(new String[]{"abcdefghijklmnopqrstuvwxyz"})));
     }
-
-    int maxLength = 0;
-    int visited = 0;
 
     public int maxLength(List<String> arr) {
         if (arr == null || arr.size() == 0) return 0;

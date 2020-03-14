@@ -12,10 +12,10 @@ import java.util.Set;
 public class constructArray667 {
     @Test
     public void test() {
-        Assert.assertArrayEquals(new int[] {1, 2, 3},constructArray(3, 1));
-        Assert.assertArrayEquals(new int[] {1, 3, 2},constructArray(3, 2));
-        Assert.assertArrayEquals(new int[] {1, 5, 2, 4, 3},constructArray(5, 4));
-        Assert.assertArrayEquals(new int[] {1, 5, 2, 4, 3},constructArray(92, 80));
+        Assert.assertArrayEquals(new int[]{1, 2, 3}, constructArray(3, 1));
+        Assert.assertArrayEquals(new int[]{1, 3, 2}, constructArray(3, 2));
+        Assert.assertArrayEquals(new int[]{1, 5, 2, 4, 3}, constructArray(5, 4));
+        Assert.assertArrayEquals(new int[]{1, 5, 2, 4, 3}, constructArray(92, 80));
     }
 
     // 暴力法 O(n!)
