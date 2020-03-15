@@ -1,14 +1,25 @@
 package com.dio.java.template;
 
+import com.dio.java.OjUtils;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MatrixTemplate {
     @Test
     public void test() {
-        // TODO: 2020/3/14 fill junit matrix here
+        int[][] input = OjUtils.toIntMatrix("[\n" +
+                "  [1,   4,  7, 11, 15],\n" +
+                "  [2,   5,  8, 12, 19],\n" +
+                "  [3,   6,  9, 16, 22],\n" +
+                "  [10, 13, 14, 17, 24],\n" +
+                "  [18, 21, 23, 26, 30]\n" +
+                "]\n");
+        Assert.assertTrue(template(input, 5));
+
     }
 
-    public boolean searchMatrix(int[][] matrix, int target) {
-        return false;
+    public boolean template(int[][] matrix, int target) {
+        return true;
     }
 }

@@ -1,12 +1,23 @@
-package com.dio.java;
+package com.dio.java.improve;
 
+import com.dio.java.OjUtils;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 // start at 2020/3/8 16:55
 public class searchMatrix240 {
     @Test
     public void test() {
-        // TODO: 2020/3/14 fill matrix construct func here, with leetcode utils.
+        int[][] input = OjUtils.toIntMatrix("[\n" +
+                "  [1,   4,  7, 11, 15],\n" +
+                "  [2,   5,  8, 12, 19],\n" +
+                "  [3,   6,  9, 16, 22],\n" +
+                "  [10, 13, 14, 17, 24],\n" +
+                "  [18, 21, 23, 26, 30]\n" +
+                "]\n");
+        Assert.assertTrue(searchMatrix(input, 5));
+        Assert.assertFalse(searchMatrix(input, 20));
     }
 
     // 根据矩阵特点裁剪矩阵 O(m + n)
