@@ -17,13 +17,13 @@ import javafx.util.Pair;
  * {@link #newListNodeFromArrays(Integer...)}
  * {@link #toIntMatrix(String)}
  * {@link #toIntListList(String)}
- *
+ * <p>
  * Handles outputs:
  * {@link #convertTreeAsArrays(TreeNode)}
  * {@link #travelListNode(ListNode, int)}
- *
+ * <p>
  * debug improvement:
- *
+ * <p>
  * unit test judge:
  * {@link ListListMatcher}
  *
@@ -101,7 +101,7 @@ public class OjUtils {
      * Travels the target amount of {@link ListNode}s, outputs the values of them in order.
      * Loop linkNode safe.
      *
-     * @param node {@link ListNode} we begin.
+     * @param node        {@link ListNode} we begin.
      * @param targetCount the count of {@link ListNode} we travel.
      * @return int array in traveling order, no resize when {@code count} < {@code targetCount}.
      */
@@ -120,7 +120,7 @@ public class OjUtils {
      * Set the ListNode tail link to target position, as a loop.
      *
      * @param head ListNode head we begin.
-     * @param pos which ListNode we expected to set loop begin.
+     * @param pos  which ListNode we expected to set loop begin.
      */
     public static void setListNodeLoopAt(ListNode head, int pos) {
         // TODO: 2020/3/15 check pos valid? pos < 0 or pos > size?
