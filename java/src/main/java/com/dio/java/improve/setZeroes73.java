@@ -1,9 +1,9 @@
 package com.dio.java.improve;
 
-import com.dio.java.OjUtils;
-
 import org.junit.Assert;
 import org.junit.Test;
+
+import dio.oj.scaffolding.OjUtils;
 
 public class setZeroes73 {
     @Test

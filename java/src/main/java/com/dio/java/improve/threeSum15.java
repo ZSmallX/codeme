@@ -1,13 +1,13 @@
 package com.dio.java.improve;
 
-import com.dio.java.OjUtils;
-
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import dio.oj.scaffolding.OjUtils;
 
 public class threeSum15 {
     @Test

@@ -1,11 +1,11 @@
 package com.dio.java.template;
 
-import com.dio.java.OjUtils;
-
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
+
+import dio.oj.scaffolding.OjUtils;
 
 public class ArrayTemplate {
     @Test
