@@ -5,7 +5,7 @@ import com.dio.java.OjUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class setZeroes {
+public class setZeroes73 {
     @Test
     public void test() {
         int[][] matrix1 = OjUtils.toIntMatrix("[\n" +
