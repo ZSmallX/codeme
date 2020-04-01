@@ -10,6 +10,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 // Tag: Set, sorted
 public class topKFrequent692 {
@@ -29,7 +30,7 @@ public class topKFrequent692 {
     }
 
     // 统计及排序 O(nlogn)
-    public List<String> topKFrequent(String[] words, int k) {
+    public List<String> topKFrequent1(String[] words, int k) {
         Map<String, Integer> map = new HashMap<>();
         for (String s : words) {
             map.put(s, map.getOrDefault(s, 0) + 1);
@@ -49,5 +50,31 @@ public class topKFrequent692 {
         return result;
     }
 
-    // TODO: 2020/3/31 使用堆 O(nlogk)
+    // 统计及排序 使用优先级队列（堆）堆大小控制恒为K，提升效率 O(nlogk)
+    public List<String> topKFrequent(String[] words, int k) {
+        final Map<String, Integer> map = new HashMap<>();
+        for (String s : words) {
+            map.put(s, map.getOrDefault(s, 0) + 1);
+        }
+
+        PriorityQueue<String> heap = new PriorityQueue<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return map.get(o1).equals(map.get(o2)) ? o2.compareTo(o1)
+                        : map.get(o1) - map.get(o2);
+            }
+        });
+        for (String word : map.keySet()) {
+            heap.offer(word);
+            if (heap.size() > k) {
+                heap.poll();
+            }
+        }
+        List<String> result = new ArrayList<>();
+        while (!heap.isEmpty()) {
+            result.add(heap.poll());
+        }
+        Collections.reverse(result);
+        return result;
+    }
 }
