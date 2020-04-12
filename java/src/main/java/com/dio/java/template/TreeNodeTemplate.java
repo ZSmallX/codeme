@@ -3,8 +3,8 @@ package com.dio.java.template;
 import org.junit.Assert;
 import org.junit.Test;
 
-import dio.oj.scaffolding.OjUtils;
-import dio.oj.scaffolding.TreeNode;
+import oj.scaffold.OjUtils;
+import oj.scaffold.TreeNode;
 
 public class TreeNodeTemplate {
     @Test

@@ -3,7 +3,7 @@ package com.dio.java.bytedance;
 import org.junit.Assert;
 import org.junit.Test;
 
-import dio.oj.scaffolding.OjUtils;
+import oj.scaffold.OjUtils;
 
 public class maxAreaOfIsland695 {
     @Test

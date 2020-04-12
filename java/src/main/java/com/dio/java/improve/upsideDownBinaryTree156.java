@@ -3,8 +3,8 @@ package com.dio.java.improve;
 import org.junit.Assert;
 import org.junit.Test;
 
-import dio.oj.scaffolding.OjUtils;
-import dio.oj.scaffolding.TreeNode;
+import oj.scaffold.OjUtils;
+import oj.scaffold.TreeNode;
 
 // Tag: Tree,travel
 public class upsideDownBinaryTree156 {

@@ -6,9 +6,9 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import dio.oj.scaffolding.TreeNode;
+import oj.scaffold.TreeNode;
 
-import static dio.oj.scaffolding.OjUtils.newTreeFromArrays;
+import static oj.scaffold.OjUtils.newTreeFromArrays;
 
 // Tag: Tree, traversal
 public class inorderTraversal94 {

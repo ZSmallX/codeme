@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import dio.oj.scaffolding.OjUtils;
+import oj.scaffold.OjUtils;
 
 public class threeSum15 {
     @Test

@@ -3,7 +3,7 @@ package com.dio.java.improve;
 import org.junit.Assert;
 import org.junit.Test;
 
-import dio.oj.scaffolding.OjUtils;
+import oj.scaffold.OjUtils;
 
 // start at 2020/3/8 16:55
 public class searchMatrix240 {

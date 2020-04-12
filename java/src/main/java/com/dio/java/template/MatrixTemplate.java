@@ -3,7 +3,7 @@ package com.dio.java.template;
 import org.junit.Assert;
 import org.junit.Test;
 
-import dio.oj.scaffolding.OjUtils;
+import oj.scaffold.OjUtils;
 
 public class MatrixTemplate {
     @Test
