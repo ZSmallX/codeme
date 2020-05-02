@@ -22,7 +22,7 @@ public class minimumTotal120 {
                 minimumTotal(OjUtils.toListList(outputText, OjUtils.INTEGER_CREATOR)));
     }
 
-    // 自顶向下 动态规划 O(n) O(n)
+    // 自底向上 动态规划 O(n) O(n)
     public int minimumTotal(List<List<Integer>> triangle) {
         if (triangle == null) {
             return 0;
@@ -41,4 +41,6 @@ public class minimumTotal120 {
 
         return dp[0];
     }
+
+    // TODO: 2020/5/1 自顶向下 + 记忆搜索
 }
