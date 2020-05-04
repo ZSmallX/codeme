@@ -17,7 +17,8 @@ public class threeSum15 {
                 "  [-1, 0, 1],\n" +
                 "  [-1, -1, 2]\n" +
                 "]";
-        Assert.assertThat(OjUtils.toIntListList(outputText), new OjUtils.ListListMatcher(threeSum(input1)));
+        Assert.assertThat(OjUtils.toListList(outputText, OjUtils.INTEGER_CREATOR),
+                new OjUtils.ListListMatcher(threeSum(input1)));
     }
 
     // 排序 + 双指针，解决重复
